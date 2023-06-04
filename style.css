@@ -263,8 +263,16 @@ body{
         padding: 0px;
         gap: 12%;
     
-        width: 190%;
+        width: 90%;
         height: 10%;
+    }
+
+    .encriptar{
+        width: 100%;
+    }
+
+    .desencriptar{
+        width: 100%;
     }
 
     .cuadro-resultado{
