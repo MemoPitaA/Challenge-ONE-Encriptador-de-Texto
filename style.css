@@ -1,0 +1,273 @@
+body{
+    /* Light blue/light-blue-100 */
+    background: #F3F5FC;
+}
+
+.a-logo{
+    /* Logo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    /* Auto layout */
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 5%;
+    top: 5%;
+}
+
+.Input{
+    /* Ingrese el texto aqui */
+
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    left: 15%;
+    top: 15%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    resize: none;
+    background-color: #F3F5FC;
+    border: 0;
+    outline: none;
+
+    /* identical to box height, or 48px */
+
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+}
+
+.advertencia{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    height: 18px;
+    left: 15%;
+    top: 80%;
+}
+
+.advertencia p{
+    /* Solo letras minúsculas y sin acentos */
+
+    width: 205px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6%;
+
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    left: 15%;
+    top: 85%;
+}
+
+.encriptar{
+    width: 47%;
+    padding: 18px;
+    font: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.desencriptar{
+    width: 47%;
+    padding: 18px;
+    font: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    color: #0A3871;
+    background: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.cuadro-resultado{
+    /* Rectangulo */
+    position: absolute;
+    width: 25%;
+    height: 90%;
+    left: 70%;
+    top: 5%;
+    background: #FFFFFF;
+
+    /* sombra */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.cont-preresultado{
+    /*elementos internos*/
+    text-align: center;
+    width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont-preresultado img{
+    /*Img de persona con lupa*/
+    width: 100%;
+}
+
+.resultado{
+    height: 75%;
+    padding: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    overflow-y: auto;
+
+    /* or 36px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+}
+
+.vacio{
+    /* Ningún mensaje fue encontrado */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+
+.ingresa_si{
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+}
+
+#boton-copiar{
+    margin-left: 5%;
+    width: 90%;
+    padding: 18px;
+    font: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    color: #0A3871;
+    background: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:810px){
+    .a-logo{
+        left: 0;
+    }
+
+    .Input{
+        width: 90%;
+        left: 5%;
+    }
+    
+    .advertencia{
+        left: 5%;
+    }
+
+    .botones {
+        width: 90%;
+        top: 82%;
+        left: 5%;
+    }
+
+    .cuadro-resultado{
+        width: 90%;
+        height: fit-content;
+        left: 5%;
+        top: 90%;
+    }
+
+    .cont-preresultado{
+        /*elementos internos*/
+        text-align: center;
+        width: 90%;
+        position: relative;
+    }
+
+    .cont-preresultado img{
+        /*Img de persona con lupa*/
+        width: 0%;
+    }
+
+    #boton-copiar{
+        position: relative;
+        margin: auto;
+        margin-bottom: 5%;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .botones {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12%;
+    
+        width: 190%;
+        height: 10%;
+    }
+
+    .cuadro-resultado{
+        top: 97.5%;
+    }
+}

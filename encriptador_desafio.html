@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Desafío del Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/Vector.svg" alt="logo Alura" class="a-logo">
+    </header>
+    <main>
+        <!--Campo de texto-->
+        <section>
+            <div>
+                <textarea id="Input" class="Input" required placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <!--Advertencia-->
+            <div class="advertencia">
+                <img src="img/Warning.svg" alt="Simbolo de Advertencia">
+                <p>Sólo letras minúsculas y sin acentos</p>
+            </div>
+        </section>
+        <!--Botones para encriptar/desencriptar-->
+        <section>
+            <div class="botones">
+                <input type="submit" value="Encriptar" id="encriptar" class="encriptar">
+                <input type="submit" value="Desencriptar" id="desencriptar" class="desencriptar">
+            </div>
+        </section>
+        <!--Cuadro de resultado-->
+        <section id="cuadro-resultado" class="cuadro-resultado">
+            <div class="resultado">
+                <p id="resultado"></p>
+            </div>
+            <div id="cont-preresultado" class="cont-preresultado">
+                <img src="img/Muñeco.svg" alt="persona con lupa viendo un diamante">
+                <p class="vacio">Ningún mensaje fue encontrado</p>
+                <p class="ingresa_si">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--<p class="copyright">Un tabajo para Alura &copyTodos los derechos reservados: Guillermo Pita (2023)</p>-->
+    </footer>    
+</body>
+<script src="script.js"></script>
+</html>
